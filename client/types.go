@@ -19,7 +19,7 @@ type Meta struct {
 	Total int `json:"total"`
 }
 type Monitor struct {
-	MonitorID           int          `json:"monitorId"`
+	ID                  int          `json:"monitorId"`
 	CreatedAt           int          `json:"createdAt"`
 	StatusClass         string       `json:"statusClass"`
 	Name                string       `json:"name"`
