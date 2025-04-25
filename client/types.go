@@ -1,4 +1,4 @@
-package main
+package client
 
 type Counts struct {
 	Up     int `json:"up"`
@@ -48,11 +48,11 @@ type Result struct {
 	Title      string `json:"title"`
 	Content    string `json:"content"`
 	Timestamp  int    `json:"ts"`
-	Date       string `json:"string"`
+	Date       string `json:"date"`
 	Time       string `json:"time"`
 	TimeGMT    string `json:"timeGMT"`
-	EndDate    any    `json:"endDate"`
-	EndDateGMT any    `json:"endDateGMT"`
+	EndDate    string `json:"endDate"`
+	EndDateGMT string `json:"endDateGMT"`
 }
 type Statistics struct {
 	Uptime         map[string]DailyRatio `json:"uptime"`

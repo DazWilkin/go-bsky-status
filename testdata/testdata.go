@@ -1,7 +1,7 @@
-package main
+package testdata
 
 var (
-	jsonEventFeed = []byte(`
+	JsonEventFeed = []byte(`
 {
   "status": true,
   "results": [
@@ -35,7 +35,7 @@ var (
     "total": 2
   }
 }`)
-	jsonMonitorList = []byte(`
+	JsonMonitorList = []byte(`
 {
   "status": "ok",
   "psp": {
@@ -11535,9 +11535,4 @@ var (
     "count_result": "9 monitors down"
   }
 }`)
-)
-
-var (
-	testEventFeed   = EventFeed{}
-	testMonitorList = MonitorList{}
 )
